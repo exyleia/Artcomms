@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <title>Commission Haven for International Artists - Linktree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script><!-- Canva SDKs -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    :focus-visible {
+      outline: 2px solid #f973b8;
+      outline-offset: 3px;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="w-full h-full bg-[#fff5fb] flex items-center justify-center p-4">
+  <div class="app-wrapper w-full h-full flex items-center justify-center">
+   <div class="main-content w-full max-w-md bg-white rounded-3xl shadow-xl border border-[#f7c4e2] px-6 py-8 flex flex-col justify-between" role="group" aria-label="Commission Haven for International Artists linktree">
+    <header class="mb-6">
+     <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center bg-[#ffe9f5] border-2 border-[#f9d976]"><!-- Simple crown-like icon -->
+      <svg class="w-9 h-9 text-[#f973b8]" viewbox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 18h16v2H4v-2Zm0-8 3.5 3 4.5-7 4.5 7L20 10v6H4v-6Z" />
+      </svg>
+     </div>
+     <h1 id="main-title" class="text-center text-2xl font-semibold tracking-tight text-[#d97706] mb-1">Commission Haven for International Artists</h1>
+     <p id="subtitle-text" class="text-center text-sm text-[#9f1239]">Temukan &amp; bagikan commission art terbaik di seluruh dunia</p>
+    </header>
+    <main class="flex-1">
+     <section aria-label="Tautan utama commission" class="space-y-3"><!-- Search for commission --> <button id="btn-search" type="button" class="group w-full flex items-center justify-between px-4 py-3 rounded-2xl border border-[#f9d976] bg-[#fff5fb] hover:bg-[#f973b8] hover:text-white transition-colors duration-200 focus-visible:outline-none">
+       <div class="flex items-center gap-3"><span class="flex items-center justify-center w-9 h-9 rounded-2xl bg-white text-[#f973b8] border border-[#f9d976] group-hover:bg-[#f973b8] group-hover:text-white transition-colors duration-200" aria-hidden="true"> <!-- Magnifying glass icon -->
+         <svg class="w-5 h-5" viewbox="0 0 24 24"><path fill="currentColor" d="M10 4a6 6 0 1 1 0 12a6 6 0 0 1 0-12Zm0-2a8 8 0 1 0 4.9 14.3L20 21.4L21.4 20l-5.1-5.1A8 8 0 0 0 10 2Z" />
+         </svg></span> <span id="search-label" class="text-sm font-medium text-[#9f1239] group-hover:text-white text-left"> Search for commission </span>
+       </div><span class="text-xs uppercase tracking-wide text-[#f973b8] group-hover:text-white"> Explore </span> </button> <!-- Other artists --> <button id="btn-other" type="button" class="group w-full flex items-center justify-between px-4 py-3 rounded-2xl border border-[#f9d976] bg-white hover:bg-[#f973b8] hover:text-white transition-colors duration-200 focus-visible:outline-none">
+       <div class="flex items-center gap-3"><span class="flex items-center justify-center w-9 h-9 rounded-2xl bg-[#fff5fb] text-[#d97706] border border-[#f9d976] group-hover:bg-[#f973b8] group-hover:text-white transition-colors duration-200" aria-hidden="true"> <!-- People icon -->
+         <svg class="w-5 h-5" viewbox="0 0 24 24"><path fill="currentColor" d="M12 12a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0 2c-2.33 0-7 1.17-7 3.5V20h14v-2.5C19 15.17 14.33 14 12 14Zm7-6a2 2 0 1 1-2-2a2 2 0 0 1 2 2Zm-1 4a4.77 4.77 0 0 1 1.57.26A4.08 4.08 0 0 1 21 16v1h-2v-1a5.35 5.35 0 0 0-1.37-3.58A4.81 4.81 0 0 1 18 12Z" />
+         </svg></span> <span id="other-label" class="text-sm font-medium text-[#9f1239] group-hover:text-white text-left"> Other artists </span>
+       </div><span class="text-xs uppercase tracking-wide text-[#f973b8] group-hover:text-white"> Discover </span> </button> <!-- Share commission --> <button id="btn-share" type="button" class="group w-full flex items-center justify-between px-4 py-3 rounded-2xl border border-[#f9d976] bg-[#fff5fb] hover:bg-[#f973b8] hover:text-white transition-colors duration-200 focus-visible:outline-none">
+       <div class="flex items-center gap-3"><span class="flex items-center justify-center w-9 h-9 rounded-2xl bg-white text-[#f973b8] border border-[#f9d976] group-hover:bg-[#f973b8] group-hover:text-white transition-colors duration-200" aria-hidden="true"> <!-- Share icon -->
+         <svg class="w-5 h-5" viewbox="0 0 24 24"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.24 1.03L9.91 13.7a3.06 3.06 0 0 0 0-3.4l5.85-3.33A3 3 0 1 0 15 5a3 3 0 0 0 .07.63L9.2 8.94a3 3 0 1 0 0 6.12l5.87 3.31A3 3 0 1 0 18 16Z" />
+         </svg></span> <span id="share-label" class="text-sm font-medium text-[#9f1239] group-hover:text-white text-left"> Share commission </span>
+       </div><span class="text-xs uppercase tracking-wide text-[#f973b8] group-hover:text-white"> Share </span> </button>
+     </section><!-- Info / feedback area -->
+     <section class="mt-5" aria-live="polite">
+      <div id="info-box" class="w-full rounded-2xl border border-dashed border-[#f9d976] bg-[#fff5fb] px-4 py-3 text-xs text-[#9f1239] flex items-start gap-2"><span class="mt-0.5" aria-hidden="true"> <!-- Small spark icon -->
+        <svg class="w-4 h-4 text-[#f973b8]" viewbox="0 0 24 24"><path fill="currentColor" d="m12 2l1.7 4.3L18 8l-4.3 1.7L12 14l-1.7-4.3L6 8l4.3-1.7L12 2Zm0 8l1 2.5L15.5 13L13 14.5L12 17l-1-2.5L8.5 13L11 12.5L12 10Z" />
+        </svg></span>
+       <p id="info-text">Pilih salah satu tombol di atas untuk mensimulasikan aksi: jelajahi, temukan, atau bagikan commission.</p>
+      </div>
+     </section>
+    </main>
+    <footer class="mt-6 pt-4 border-t border-[#ffe4f1]">
+     <p id="footer-text" class="text-[11px] text-center tracking-wide uppercase text-[#9f1239]">Curated commissions for global creatives</p>
+    </footer>
+   </div>
+  </div>
+  <script>
+    (function () {
+      const defaultConfig = {
+        // Colors (max 5)
+        background_color: "#fff5fb",   // soft pink background
+        surface_color: "#ffffff",      // white card
+        text_color: "#9f1239",         // deep rose text
+        primary_action_color: "#f973b8", // bright pink
+        secondary_action_color: "#f9d976", // soft gold
+
+        // Typography
+        font_family: "system-ui",
+        font_size: 14,
+
+        // Text content
+        main_title: "Commission Haven for International Artists",
+        subtitle: "Temukan & bagikan commission art terbaik di seluruh dunia",
+        search_label: "Search for commission",
+        other_label: "Other artists",
+        share_label: "Share commission",
+        footer_text: "Curated commissions for global creatives"
+      };
+
+      function applyConfig(config) {
+        const cfg = Object.assign({}, defaultConfig, config || {});
+
+        const root = document.documentElement;
+        const body = document.body;
+        const card = document.querySelector(".main-content");
+        const iconAvatar = card.querySelector("header div.w-16");
+        const iconCircleSearch = document.querySelector("#btn-search span[aria-hidden='true']");
+        const iconCircleOther = document.querySelector("#btn-other span[aria-hidden='true']");
+        const iconCircleShare = document.querySelector("#btn-share span[aria-hidden='true']");
+        const btnSearch = document.getElementById("btn-search");
+        const btnOther = document.getElementById("btn-other");
+        const btnShare = document.getElementById("btn-share");
+        const mainTitle = document.getElementById("main-title");
+        const subtitle = document.getElementById("subtitle-text");
+        const searchLabel = document.getElementById("search-label");
+        const otherLabel = document.getElementById("other-label");
+        const shareLabel = document.getElementById("share-label");
+        const footerText = document.getElementById("footer-text");
+
+        // Colors
+        body.style.backgroundColor = cfg.background_color;
+        if (card) {
+          card.style.backgroundColor = cfg.surface_color;
+          card.style.borderColor = cfg.secondary_action_color;
+        }
+        if (iconAvatar) {
+          iconAvatar.style.backgroundColor = "#ffe9f5";
+          iconAvatar.style.borderColor = cfg.secondary_action_color;
+        }
+
+        // Buttons base text colors
+        [btnSearch, btnOther, btnShare].forEach(function (btn) {
+          if (!btn) return;
+          btn.style.borderColor = cfg.secondary_action_color;
+          btn.style.color = cfg.text_color;
+        });
+
+        if (iconCircleSearch) {
+          iconCircleSearch.style.backgroundColor = "#ffffff";
+          iconCircleSearch.style.color = cfg.primary_action_color;
+          iconCircleSearch.style.borderColor = cfg.secondary_action_color;
+        }
+        if (iconCircleOther) {
+          iconCircleOther.style.backgroundColor = "#fff5fb";
+          iconCircleOther.style.color = "#d97706";
+          iconCircleOther.style.borderColor = cfg.secondary_action_color;
+        }
+        if (iconCircleShare) {
+          iconCircleShare.style.backgroundColor = "#ffffff";
+          iconCircleShare.style.color = cfg.primary_action_color;
+          iconCircleShare.style.borderColor = cfg.secondary_action_color;
+        }
+
+        // Typography scale
+        const base = Number(cfg.font_size) || defaultConfig.font_size;
+        const baseStack = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+        const customFont = cfg.font_family || defaultConfig.font_family;
+        const fontStack = customFont
+          ? customFont + ", " + baseStack
+          : baseStack;
+
+        // Apply font family
+        if (root) {
+          root.style.fontFamily = fontStack;
+        }
+
+        if (mainTitle) {
+          mainTitle.style.fontSize = (base * 1.7) + "px";
+          mainTitle.style.color = "#d97706";
+        }
+        if (subtitle) {
+          subtitle.style.fontSize = (base * 0.95) + "px";
+          subtitle.style.color = cfg.text_color;
+        }
+        if (searchLabel) {
+          searchLabel.style.fontSize = base + "px";
+          searchLabel.style.color = cfg.text_color;
+        }
+        if (otherLabel) {
+          otherLabel.style.fontSize = base + "px";
+          otherLabel.style.color = cfg.text_color;
+        }
+        if (shareLabel) {
+          shareLabel.style.fontSize = base + "px";
+          shareLabel.style.color = cfg.text_color;
+        }
+        if (footerText) {
+          footerText.style.fontSize = (base * 0.8) + "px";
+          footerText.style.color = cfg.text_color;
+        }
+
+        // Text content
+        if (mainTitle) {
+          mainTitle.textContent = cfg.main_title || defaultConfig.main_title;
+        }
+        if (subtitle) {
+          subtitle.textContent = cfg.subtitle || defaultConfig.subtitle;
+        }
+        if (searchLabel) {
+          searchLabel.textContent = cfg.search_label || defaultConfig.search_label;
+        }
+        if (otherLabel) {
+          otherLabel.textContent = cfg.other_label || defaultConfig.other_label;
+        }
+        if (shareLabel) {
+          shareLabel.textContent = cfg.share_label || defaultConfig.share_label;
+        }
+        if (footerText) {
+          footerText.textContent = cfg.footer_text || defaultConfig.footer_text;
+        }
+      }
+
+      // Simple inline feedback when buttons clicked
+      function setupInteractions() {
+        var infoText = document.getElementById("info-text");
+        var infoBox = document.getElementById("info-box");
+        var btnSearch = document.getElementById("btn-search");
+        var btnOther = document.getElementById("btn-other");
+        var btnShare = document.getElementById("btn-share");
+
+        function setInfo(message) {
+          if (!infoText || !infoBox) return;
+          infoText.textContent = message;
+          infoBox.classList.add("ring-2", "ring-[#f973b8]");
+          setTimeout(function () {
+            infoBox.classList.remove("ring-2", "ring-[#f973b8]");
+          }, 600);
+        }
+
+        if (btnSearch) {
+          btnSearch.addEventListener("click", function () {
+            setInfo("Mode pencarian: bayangkan halaman untuk mencari artist & slot commission favoritmu.");
+          });
+        }
+        if (btnOther) {
+          btnOther.addEventListener("click", function () {
+            setInfo("Mode eksplorasi: daftar kreator lain dari berbagai negara untuk kamu cek portofolionya.");
+          });
+        }
+        if (btnShare) {
+          btnShare.addEventListener("click", function () {
+            setInfo("Mode berbagi: gunakan tautan ini untuk membagikan halaman commission kamu ke klien.");
+          });
+        }
+      }
+
+      // Initialize Element SDK if available
+      function initElementSdk() {
+        if (!window.elementSdk) {
+          applyConfig(defaultConfig);
+          setupInteractions();
+          return;
+        }
+
+        window.elementSdk.init({
+          defaultConfig: defaultConfig,
+          onConfigChange: async function (config) {
+            applyConfig(config || {});
+          },
+          mapToCapabilities: function (config) {
+            var cfg = Object.assign({}, defaultConfig, config || {});
+
+            return {
+              recolorables: [
+                {
+                  get: function () { return cfg.background_color; },
+                  set: function (value) {
+                    cfg.background_color = value;
+                    window.elementSdk.setConfig({ background_color: value });
+                  }
+                },
+                {
+                  get: function () { return cfg.surface_color; },
+                  set: function (value) {
+                    cfg.surface_color = value;
+                    window.elementSdk.setConfig({ surface_color: value });
+                  }
+                },
+                {
+                  get: function () { return cfg.text_color; },
+                  set: function (value) {
+                    cfg.text_color = value;
+                    window.elementSdk.setConfig({ text_color: value });
+                  }
+                },
+                {
+                  get: function () { return cfg.primary_action_color; },
+                  set: function (value) {
+                    cfg.primary_action_color = value;
+                    window.elementSdk.setConfig({ primary_action_color: value });
+                  }
+                },
+                {
+                  get: function () { return cfg.secondary_action_color; },
+                  set: function (value) {
+                    cfg.secondary_action_color = value;
+                    window.elementSdk.setConfig({ secondary_action_color: value });
+                  }
+                }
+              ],
+              borderables: [],
+              fontEditable: {
+                get: function () {
+                  return cfg.font_family || defaultConfig.font_family;
+                },
+                set: function (value) {
+                  cfg.font_family = value;
+                  window.elementSdk.setConfig({ font_family: value });
+                }
+              },
+              fontSizeable: {
+                get: function () {
+                  return Number(cfg.font_size) || defaultConfig.font_size;
+                },
+                set: function (value) {
+                  cfg.font_size = value;
+                  window.elementSdk.setConfig({ font_size: value });
+                }
+              }
+            };
+          },
+          mapToEditPanelValues: function (config) {
+            var cfg = Object.assign({}, defaultConfig, config || {});
+            return new Map([
+              ["main_title", cfg.main_title],
+              ["subtitle", cfg.subtitle],
+              ["search_label", cfg.search_label],
+              ["other_label", cfg.other_label],
+              ["share_label", cfg.share_label],
+              ["footer_text", cfg.footer_text]
+            ]);
+          }
+        });
+
+        applyConfig(window.elementSdk.config || defaultConfig);
+        setupInteractions();
+      }
+
+      initElementSdk();
+    })();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a4f3e78c12ff7e6',t:'MTc2NDIyMTUzNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
